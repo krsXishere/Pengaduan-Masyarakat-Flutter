@@ -6,6 +6,7 @@ class ComplaintModel {
       aduan,
       tanggal,
       statusLaporan,
+      bukti,
       createdAt,
       updatedAt;
 
@@ -18,6 +19,7 @@ class ComplaintModel {
     required this.aduan,
     required this.tanggal,
     required this.statusLaporan,
+    required this.bukti,
     required this.createdAt,
     required this.updatedAt,
   });
@@ -32,6 +34,7 @@ class ComplaintModel {
       aduan: object['data']['aduan'],
       tanggal: object['data']['tanggal'],
       statusLaporan: object['data']['status'],
+      bukti: object['data']['bukti'],
       createdAt: object['data']['created_at'],
       updatedAt: object['data']['updated_at'],
     );
